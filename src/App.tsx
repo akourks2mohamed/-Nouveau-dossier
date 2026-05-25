@@ -4,6 +4,8 @@ import { Sparkles, Heart, BellRing, Calendar, Music, MailOpen, AlertCircle } fro
 import MusicPlayer from './components/MusicPlayer';
 import FloatingParticles from './components/FloatingParticles';
 import LetterEnvelope from './components/LetterEnvelope';
+import ShootingStars from './components/ShootingStars';
+import MessagesCarousel from './components/MessagesCarousel';
 
 // Dynamic asset imports
 import bgImgUrl from './assets/images/soft_floral_bg_1779672803924.png';
@@ -69,6 +71,7 @@ export default function App() {
 
       {/* Floating particles background of real roses and cookies */}
       {hasEntered && <FloatingParticles />}
+      {hasEntered && <ShootingStars />}
 
       <AnimatePresence mode="wait">
         {!hasEntered ? (
@@ -258,6 +261,9 @@ export default function App() {
                 </span>
               </div>
             </div>
+
+            {/* ROTATING MESSAGES CAROUSEL */}
+            <MessagesCarousel />
 
             {/* MUSIC PLAYER CONTROLLER */}
             <MusicPlayer 
