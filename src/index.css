@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Amiri:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=JetBrains+Mono:wght@300;400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Amiri", Georgia, serif;
+  --font-display: "Playfair Display", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-warm-bg: #fffcf5;
+  --color-warm-text: #4a3a2e;
+  --color-warm-accent: #d4a373;
+  --color-espresso: #5d4037;
+  --color-warm-muted: #8b7e74;
+  --color-warm-border: #f5ebe0;
+  --color-warm-border-dark: #e3d5ca;
+  --color-warm-olive: #6b8e23;
+  --color-warm-pink: #ffb7c5;
+}
+
+/* Custom soft smooth styling */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: var(--font-sans);
+  background-color: var(--color-warm-bg);
+  color: var(--color-warm-text);
+}
+
+::selection {
+  background-color: #ff8a8a;
+  color: white;
+}
+
+/* Floating animation keyframes for background elements */
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(15deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.animate-float-slow {
+  animation: float 8s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: float 4s ease-in-out infinite;
+}

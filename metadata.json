@@ -1,0 +1,8 @@
+{
+  "name": "Sara's Special Gift - هدية صديقتنا سارة",
+  "description": "صفحة إلكترونية تفاعلية مهداة لصديقتي سارة بذكرى الصداقة والأخوة والمشاعر الصادقة تجمع بين الموسيقى العذبة لأهواك والعداد التذكاري المباشر والورود والكوكيز الحقيقية.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
